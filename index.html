@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="src/style.css" />
 </head>
 
-<body class=" flex-col justify-center text-center content-center md:m-0 md:p-16 mx-auto md:">
+<body class=" flex-col justify-center text-center center md:m-0 md:p-16 mx-auto max-w-lg">
   <img src="img/money.png" alt="" class="money-img mx-auto" />
   <h1 class="text-4xl">Exchange Rate Calculator</h1>
   <p class="m-3">Choose the currency and the amounts to get the exchange rate</p>
 
-  <div class="container mt-12 flex-col justify-center content-center h-screen sm:mb-2">
+  <div class="container mt-12 flex-col justify-center items-center h-screen sm:mb-2">
     <div class="currency sm:flex-no-wrap">
-      <select id="currency-one" class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 text-xl">
+      <select id="currency-one" class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 sm:text-xl">
         <option value="AED">AED</option>
         <option value="ARS">ARS</option>
         <option value="AUD">AUD</option>
@@ -71,10 +71,10 @@
         <option value="ZAR">ZAR</option>
       </select>
       <input type="number" id="amount-one" placeholder="0" value="1" step="any"
-        class="p-1 ml-6 rounded focus:outline-none border-solid border-4 border-gray-400 text-xl" />
+        class="p-1 sm:ml-6 rounded focus:outline-none border-solid border-4 border-gray-400 sm:text-xl" />
     </div>
 
-    <div class="swap-rate-container flex mt-8 mb-8 pl-20">
+    <div class="swap-rate-container flex mt-8 mb-8 pl-20 content-center justify-center">
       <button class="btn bg-teal-500 pl-4 pr-4 font-bold rounded p-1 focus:outline-none mr-10 text-white" id="swap">
         Swap
       </button>
@@ -82,7 +82,7 @@
     </div>
 
     <div class="currency">
-      <select id="currency-two" class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 text-xl">
+      <select id="currency-two" class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 sm:text-xl">
         <option value="AED">AED</option>
         <option value="ARS">ARS</option>
         <option value="AUD">AUD</option>
@@ -137,7 +137,7 @@
         <option value="ZAR">ZAR</option>
       </select>
       <input type="number" id="amount-two" placeholder="0" step="any"
-        class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 ml-6 text-xl " />
+        class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 sm:ml-6 sm:text-xl " />
     </div>
   </div>
 
