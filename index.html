@@ -14,7 +14,7 @@
   <h1 class="text-4xl">Exchange Rate Calculator</h1>
   <p class="m-3">Choose the currency and the amounts to get the exchange rate</p>
 
-  <div class="container mt-12 flex-col justify-center content-center h-screen">
+  <div class="container mt-12 flex-col justify-center content-center h-screen sm:mb-2">
     <div class="currency sm:flex-no-wrap">
       <select id="currency-one" class="p-1 rounded focus:outline-none border-solid border-4 border-gray-400 text-xl">
         <option value="AED">AED</option>
@@ -75,9 +75,7 @@
     </div>
 
     <div class="swap-rate-container flex mt-8 mb-8 pl-20">
-      <button
-        class="btn bg-teal-500 pl-4 pr-4 font-bold rounded hover:bg-blue-400 p-1 focus:outline-none mr-10 text-white"
-        id="swap">
+      <button class="btn bg-teal-500 pl-4 pr-4 font-bold rounded p-1 focus:outline-none mr-10 text-white" id="swap">
         Swap
       </button>
       <div class="rate mr-12" id="rate"></div>
